@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>География как наука</title>
+<style>*{box-sizing:border-box}html,body{margin:0;background:#050a24;color:#fff;font:16px Tahoma,Verdana,Arial,sans-serif}
+html,body{height:100%}#w{display:table;width:100%;height:100%;padding:20px 12px}#x{display:table-cell;vertical-align:middle}
+#m{max-width:760px;margin:0 auto}
+#l{position:fixed;top:12px;right:12px;width:180px;background:#0a1440;border:1px solid #2a3c8c;border-radius:6px;padding:6px;font-size:14px}
+#l div{padding:4px 10px;color:#e8a33c;border-radius:3px}#l .c{background:#e8a33c;color:#000}
+#ll{display:flex;flex-wrap:wrap;justify-content:center;margin-bottom:20px}
+.b{font:inherit;cursor:pointer;background:#0f1d5e;color:#fff;border:2px solid #6c85e0;border-radius:24px;padding:8px 16px;margin:4px}
+.b:hover,.b:focus{border-color:#e8a33c;outline:0}.b[disabled]{opacity:.3;cursor:default}
+#q{background:#0f1d5e;border:2px solid #6c85e0;border-radius:12px;padding:28px 24px;text-align:center;font-size:21px;line-height:1.4;margin-bottom:16px}
+#a{display:flex;flex-wrap:wrap;margin:0 -6px}
+#a .b{width:47%;width:calc(50% - 12px);margin:6px;text-align:left;padding:14px 18px;border-radius:24px;min-height:52px}
+#a span{color:#e8a33c;font-weight:bold;margin-right:10px}#a .sel{background:#e8a33c;color:#000;border-color:#e8a33c}#a .sel span,#a .ok span,#a .no span{color:#fff}
+#a .ok{background:#2a9d3c;border-color:#2a9d3c}#a .no{background:#b3261e;border-color:#b3261e}
+#h{min-height:22px;text-align:center;color:#ffd98a;margin-bottom:10px}#st{text-align:center;padding-top:40px}#st .b{padding:12px 30px;font-size:18px}
+@media(max-width:1180px){#w{padding-right:210px}}
+@media(max-width:700px){#w{padding-right:12px}#l{display:none}#a .b{width:100%;width:calc(100% - 12px)}}
+</style></head><body><div id="w"><div id="x"><div id="m"></div></div><div id="l"></div></div>
+<script>
+var PR=["500", "1 000", "5 000", "50 000", "250 000", "1 000 000"];
+var LV=[
+[["Гляциология - это наука о...", ["природных льдах", "озёрах", "пещерах", "облаках"], 0], ["Что изучает гидрология?", ["горные породы", "природные воды", "почвы", "растения"], 1], ["Какая наука изучает рельеф земной поверхности?", ["геоморфология", "климатология", "гляциология", "топонимика"], 0], ["Акватория - это часть...", ["суши", "водной поверхности", "воздушной оболочки", "земной коры"], 1], ["Терриконы, котлованы, овраги, появившиеся из-за деятельности человека, - это формы...", ["вулканического рельефа", "ледникового рельефа", "антропогенного рельефа", "морского рельефа"], 2]],
+[["Какой метод назван «стержневым» методом географии?", ["статистический", "картографический", "математический", "описательный"], 1], ["Как называют карту, составленную без соблюдения масштаба?", ["картосхема", "глобус", "аэрофотоснимок", "план местности"], 0], ["Как называется самая сложная, планетарная геосистема?", ["природная зона", "географическая оболочка", "ландшафт", "материк"], 1], ["Кто разработал учение о биосфере и ноосфере?", ["В. В. Докучаев", "В. И. Вернадский", "М. В. Ломоносов", "Л. С. Берг"], 1], ["Кого называют основателем современного почвоведения?", ["В. В. Докучаев", "Л. С. Берг", "Н. Н. Баранский", "А. И. Воейков"], 0]],
+[["Что НЕ входит в состав географической оболочки?", ["нижняя часть атмосферы", "верхняя часть литосферы", "гидросфера", "земное ядро"], 3], ["Как называется территория, выделенная как результат сложившейся в ней ассоциации взаимосвязанных явлений?", ["акватория", "регион", "аэротория", "ареал"], 1], ["Какого компонента НЕТ в схеме природно-территориального комплекса?", ["рельеф", "почвы", "население", "животный мир"], 2], ["Что дало мощный толчок развитию экономической географии в странах Запада?", ["Великие географические открытия", "промышленная революция", "Вторая мировая война", "запуск спутников"], 1]],
+[["Какое свойство геосистемы особенно значимо именно для географа?", ["пространственная приуроченность", "автономность", "устойчивость", "структурность"], 0], ["Бруней окружён Малайзией и Южно-Китайским морем. Как называется такое государство?", ["анклав", "полуанклав", "эксклав", "архипелаг"], 1], ["Чьи это слова: «Не должно быть ни бесчеловечной физической географии, ни противоестественной экономической географии»?", ["Н. Н. Баранский", "В. В. Докучаев", "К. Риттер", "М. В. Ломоносов"], 0], ["Кто сравнивал ландшафт с организмом, где части обусловливают целое, а целое влияет на части?", ["Л. С. Берг", "В. И. Вернадский", "Т. Хегерстранд", "Н. Н. Колосовский"], 0], ["Кто автор кластерной теории?", ["М. Портер", "У. Айзард", "Ж. Будвиль", "Н. Н. Колосовский"], 0]],
+[["Благодаря кому зональность была возведена в ранг географического закона?", ["А. Гумбольдту и В. В. Докучаеву", "К. Риттеру и М. В. Ломоносову", "В. И. Вернадскому и Л. С. Бергу", "Эратосфену и Птолемею"], 0], ["Какой пример проявления закона секторности приводится для территории России?", ["распределение темнохвойных и светлохвойных лесов", "смена тундры тайгой", "высотные пояса Кавказа", "многолетняя мерзлота"], 0], ["Кто авторы концепции полюсов и центров роста?", ["французы Ф. Перру и Ж. Будвиль", "шведы Т. Хегерстранд и Г. Мюрдаль", "американцы М. Портер и У. Айзард", "Н. Н. Колосовский и Н. Н. Баранский"], 0], ["Что считается едва ли не главным атрибутом кластера?", ["конкурентоспособность", "государственная собственность", "большая площадь", "выпуск одного вида продукции"], 0]],
+[["Какой труд А. И. Воейкова (1887) характеризует его как географа-комплексника?", ["«Распределение населения Земли в зависимости от природных условий и деятельности человека»", "«Космос»", "«Русский чернозём»", "«Землеведение»"], 0], ["В каком порядке идут стадии распространения нововведений по Хегерстранду?", ["агломерация → диффузия → насыщение", "диффузия → агломерация → насыщение", "насыщение → диффузия → агломерация", "центр → периферия → полупериферия"], 0], ["Какая концепция стала популярной в 1960–1970-х годах благодаря проектной и преобразовательной направленности исследований?", ["конструктивная география", "концепция устойчивого развития", "географический детерминизм", "диффузия нововведений"], 0]]];
+var Q=[],n,lock,used,rm=[],L="ABCD";
+function $(i){return document.getElementById(i)}
+function pr(i){return PR[i]||String((i+1)*100)}
+function ladder(){var h="";for(var i=LV.length-1;i>=0;i--){h+='<div'+(i==n?' class="c"':'')+'>'+(i+1)+'. '+pr(i)+'</div>'}$("l").innerHTML=h}
+function start(){Q=[];for(var i=0;i<LV.length;i++){var x=LV[i][Math.floor(Math.random()*LV[i].length)],o=[0,1,2,3],a=[],c;
+for(var j=3;j>0;j--){var k=Math.floor(Math.random()*(j+1)),t=o[j];o[j]=o[k];o[k]=t}
+for(j=0;j<4;j++){a.push(x[1][o[j]]);if(o[j]==x[2])c=j}Q.push({q:x[0],a:a,c:c})}n=0;used={};rm=[];show()}
+function show(){lock=0;ladder();var q=Q[n],h='<div id="ll">';
+var t=[["f","50:50"],["p","Звонок другу"],["z","Помощь зала"]];
+for(var i=0;i<3;i++)h+='<button class="b" onclick="life(\''+t[i][0]+'\')"'+(used[t[i][0]]?" disabled":"")+'>'+t[i][1]+'</button>';
+if(n)h+='<button class="b" onclick="take()">Забрать '+pr(n-1)+'</button>';h+='</div><div id="h"></div><div id="q">'+q.q+'</div><div id="a">';
+for(i=0;i<4;i++)h+='<button class="b" id="o'+i+'" onclick="pick('+i+')"><span>'+L[i]+':</span>'+q.a[i]+'</button>';
+$("m").innerHTML=h+'</div>';for(i=0;i<rm.length;i++){$("o"+rm[i]).disabled=true;$("o"+rm[i]).innerHTML="&nbsp;"}}
+function pick(i){if(lock)return;var b=$("o"+i);if(b.disabled)return;lock=1;b.className="b sel";var c=Q[n].c;
+setTimeout(function(){$("o"+c).className="b ok";if(i!=c)b.className="b no";
+setTimeout(function(){if(i!=c)end("Неверно. Правильный ответ: "+L[c]+". Вы ничего не выиграли.");else if(rm=[],++n>=Q.length)end("Поздравляем! Вы выиграли "+pr(n-1)+"!");else show()},1500)},1200)}
+function life(t){if(lock||used[t])return;used[t]=1;var c=Q[n].c,i,r=[],h;
+if(t=="f"){for(i=0;i<4;i++)if(i!=c)r.push(i);r.splice(Math.floor(Math.random()*3),1);rm=r;h="Осталось два варианта"}
+if(t=="p"){i=Math.random()<.75?c:Math.floor(Math.random()*4);h="Друг: «Думаю, это "+L[i]+"»"}
+if(t=="z"){var v=[0,0,0,0],s=0;for(i=0;i<4;i++)if(!$("o"+i).disabled){v[i]=Math.random()*30;if(i==c)v[i]+=40;s+=v[i]}
+h="Зал: ";for(i=0;i<4;i++)if(v[i])h+=L[i]+" "+Math.round(v[i]/s*100)+"%  "}
+show();$("h").innerHTML=h}
+function take(){if(!lock&&n)end("Вы забрали "+pr(n-1)+"!")}
+function end(t){lock=1;$("m").innerHTML='<div id="st"><div id="q">'+t+'</div><button class="b" onclick="start()">Играть снова</button></div>'}
+document.onkeydown=function(e){e=e||window.event;var k=String.fromCharCode(e.keyCode).toUpperCase(),i=L.indexOf(k);if(i>=0&&$("o0"))pick(i)};
+$("m").innerHTML='<div id="st"><div id="q">География как наука: '+LV.length+' вопросов</div><button class="b" onclick="start()">Начать игру</button></div>';ladder();
+</script></body></html>
